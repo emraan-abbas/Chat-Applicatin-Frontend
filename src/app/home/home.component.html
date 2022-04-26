@@ -1,0 +1,17 @@
+<body>
+  <div class="container">
+    <h2>Chat Application</h2>
+  </div>
+
+  <div class="hero">
+    <form class="example-form">
+      <h2>Enter your name and start chatting.</h2>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Your Name</mat-label>
+        <input [(ngModel)]="NameValue" [ngModelOptions]="{standalone: true}" matInput placeholder=" Ex. Tom Cruise">
+      </mat-form-field>
+      <br>
+      <button mat-raised-button color="primary" (click)="getName()">Submit</button>
+    </form>
+  </div>
+</body>
